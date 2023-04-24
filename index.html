@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bullseye Game</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Color Blast Game</title>
+	<style>
+		body {
+			background-color: #eee;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 500px;
+		}
+		.ball {
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			margin: 5px;
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
-	<div class="container">
-		<div class="board">
-			<div class="circle" id="circle1" onclick="checkHit(1)"></div>
-			<div class="circle" id="circle2" onclick="checkHit(2)"></div>
-			<div class="circle" id="circle3" onclick="checkHit(3)"></div>
-			<div class="circle" id="circle4" onclick="checkHit(4)"></div>
-			<div class="circle" id="circle5" onclick="checkHit(5)"></div>
-			<div class="circle" id="circle6" onclick="checkHit(6)"></div>
-			<div class="circle" id="circle7" onclick="checkHit(7)"></div>
-			<div class="circle" id="circle8" onclick="checkHit(8)"></div>
-			<div class="circle" id="circle9" onclick="checkHit(9)"></div>
-			<div class="circle" id="circle10" onclick="checkHit(10)"></div>
-		</div>
-		<div class="stats">
-			<p>Score: <span id="score">0</span></p>
-			<p>Time Left: <span id="time">30</span></p>
-		</div>
-		<button id="start-btn" onclick="startGame()">Start Game</button>
-	</div>
-
+	<div class="container"></div>
 	<script src="main.js"></script>
 </body>
 </html>
